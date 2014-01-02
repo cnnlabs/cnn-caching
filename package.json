@@ -3,19 +3,23 @@
   "description": "Easier caching in node.js",
   "version": "0.2.0",
   "author": "Mathias Pettersson <mape@mape.me>",
-  "engines": [
-    "node"
+  "contributors": [
+    {
+      "name": "Wilson Wise",
+      "email": "wilson.wise@turner.com"
+    }
   ],
+  "engines": {
+    "node": ">=0.10"
+  },
   "directories": {
     "lib": "./lib"
   },
   "main": "./lib/caching",
-  "repositories": [
-    {
-      "type": "git",
-      "url": "http://github.com/mape/node-caching"
-    }
-  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/wilsonodk/node-caching"
+  },
   "dependencies": {
     "hiredis": ">=0.1.12",
     "redis": ">=0.6.7",
