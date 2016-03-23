@@ -1,11 +1,13 @@
-# node-caching
+# CNN Caching
 
 Makes working with caching easier. Now with [hash ring support](http://en.wikipedia.org/wiki/Consistent_hashing)!
+
+Fork of [mape/node-caching](https://github.com/mape/node-caching)
 
 
 ## Installation
 
-Via [npm](http://github.com/isaacs/npm):
+Via [npm](https://docs.npmjs.com/getting-started/installing-node):
 
 ```
 $ npm install caching
