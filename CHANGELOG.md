@@ -1,22 +1,5 @@
 # CNN Caching Changelog
 
-## 2016-03-24, Version 0.5.1, @adslaton
-
-### Notable changes
-
-- Readme updates
-
-
-### Known issues
-
-See https://github.com/cnnlabs/cnn-caching/labels/defect for complete and
-current list of known issues.
-
-
-### Commits
-
-* [[`e967c51595`](https://github.com/cnnlabs/cnn-caching/commit/e967c51595)] - updating the readme (A.D. Slaton)
-
 
 ## 2016-03-23, Version 0.5.0, @adslaton
 
