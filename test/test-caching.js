@@ -1,13 +1,13 @@
-var Caching = require('../')
-	, memoryCache = new Caching('memory')
-	, assert = require('assert');
+var Caching = require('../'),
+	memoryCache = new Caching('memory'),
+	assert = require('assert');
 
 exports['MemoryStore'] = function(beforeExit) {
-	var wroteCache = false
-		, lastResults
-		, callbacksCalled = 0
-		, key = 'hello memory '+Math.random()
-		, ttl = 500; // 1s
+	var wroteCache = false,
+		lastResults,
+		callbacksCalled = 0,
+		key = 'hello memory '+Math.random(),
+		ttl = 500; // 1s
 
 	function store(next) {
 		callbacksCalled++;
