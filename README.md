@@ -10,7 +10,7 @@ Fork of [mape/node-caching](https://github.com/mape/node-caching)
 Via [npm](https://docs.npmjs.com/getting-started/installing-node):
 
 ```
-$ npm install caching
+$ npm install cnn-caching
 ```
 
 
@@ -24,7 +24,7 @@ $ npm install caching
 ### Pseudo-code Example
 
 ```javascript
-var Caching = require('caching');
+var Caching = require('cnn-caching');
 var cache = new Caching('redis'); /* use 'memory', 'redis' or 'hashring' */
 
 var ttl = 60 * 1000; // 1minute;
@@ -41,7 +41,7 @@ cache('twitter-users', ttl, function(passalong) {
 ### Memory Code Example
 
 ```javascript
-var Caching = require('caching');
+var Caching = require('cnn-caching');
 var cache = new Caching();
 
 setInterval(function() {
@@ -61,7 +61,7 @@ setInterval(function() {
 ### Redis Code Example
 
 ```javascript
-var Caching = require('caching');
+var Caching = require('cnn-caching');
 var cache = new Caching('redis');
 
 setInterval(function() {
@@ -81,7 +81,7 @@ setInterval(function() {
 ### Hash Ring Code Example
 
 ```javascript
-var Caching = require('caching');
+var Caching = require('cnn-caching');
 var cache = new Caching('hashring', {
         "servers": 'http://localhost:6377,http://localhost:6378,http://localhost:6379,http://localhost:6380',
         "max cache size": 10000 /* Any node-hashing options allowed */
