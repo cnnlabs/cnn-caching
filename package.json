@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/cnnlabs/cnn-caching#readme",
   "engines": {
-    "node": ">=4.3.1"
+    "node": ">=0.10.42"
   },
   "dependencies": {
     "hashring": "3.2.0",
