@@ -1,6 +1,36 @@
 # CNN Caching Changelog
 
 
+## 2016-03-24, Version 0.6.0, @adslaton
+
+### Notable changes
+
+- Updated the readme to be inline with the repo
+
+- Updated the changelog to have a list of commits
+
+- Changed tabs to spaces
+
+- Using the util module to format string concatenations
+
+
+### Known issues
+
+See https://github.com/cnnlabs/cnn-caching/labels/defect for complete and
+current list of known issues.
+
+### Commits
+
+* [[`cc2ae852e4`](https://github.com/cnnlabs/cnn-caching/commit/cc2ae852e4)] - Merge pull request #1 from cnnlabs/feature/readme-update (A.D. Slaton) 
+* [[`05ea6c2989`](https://github.com/cnnlabs/cnn-caching/commit/05ea6c2989)] - removing travis integration support for now (A.D. Slaton) * [[`d0a86d74ee`](https://github.com/cnnlabs/cnn-caching/commit/d0a86d74ee)] - clean up formatting of lib/stores/* (A.D. Slaton) 
+* [[`03b11b98c4`](https://github.com/cnnlabs/cnn-caching/commit/03b11b98c4)] - clean up formatting of example/index.js (A.D. Slaton) 
+* [[`7eea915d78`](https://github.com/cnnlabs/cnn-caching/commit/7eea915d78)] - clean up formating of caching (A.D. Slaton) 
+* [[`c4e11baf0c`](https://github.com/cnnlabs/cnn-caching/commit/c4e11baf0c)] - updating the node engine support for 0.10.42 at a minimum in travis (A.D. Slaton) 
+* [[`b66e187117`](https://github.com/cnnlabs/cnn-caching/commit/b66e187117)] - updating the node engine support for 0.10.42 at a minimum (A.D. Slaton) 
+* [[`52e23a9f58`](https://github.com/cnnlabs/cnn-caching/commit/52e23a9f58)] - adding build flags (A.D. Slaton) * [[`e7440c5286`](https://github.com/cnnlabs/cnn-caching/commit/e7440c5286)] - updating the changelog (A.D. Slaton) 
+* [[`adef437ad5`](https://github.com/cnnlabs/cnn-caching/commit/adef437ad5)] - updating the changelog (A.D. Slaton) 
+* [[`e967c51595`](https://github.com/cnnlabs/cnn-caching/commit/e967c51595)] - updating the readme (A.D. Slaton) 
+
 ## 2016-03-23, Version 0.5.0, @adslaton
 
 ### Notable changes
