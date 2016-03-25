@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/cnnlabs/cnn-caching#readme",
   "engines": {
-    "node": ">=4.3.1"
+    "node": ">=0.10.42"
   },
   "dependencies": {
     "hashring": "3.2.0",
@@ -26,7 +26,8 @@
     "redis": "2.5.3"
   },
   "devDependencies": {
-    "expresso": "0.9.2"
+    "expresso": "0.9.2",
+    "nock": "7.5.0"
   },
   "keywords": [
     "cnn",

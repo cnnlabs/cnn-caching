@@ -4,13 +4,19 @@ Makes working with caching easier. Now with [hash ring support](http://en.wikipe
 
 Fork of [mape/node-caching](https://github.com/mape/node-caching)
 
+[![build](https://img.shields.io/travis/cnnlabs/cnn-caching/master.svg?style=flat-square)](https://travis-ci.org/cnnlabs/cnn-caching)
+![node](https://img.shields.io/node/v/cnn-caching.svg?style=flat-square)
+[![npm](https://img.shields.io/npm/v/cnn-caching.svg?style=flat-square)](https://www.npmjs.com/package/cnn-caching)
+[![npm-downloads](https://img.shields.io/npm/dm/cnn-caching.svg?style=flat-square)](https://www.npmjs.com/package/cnn-caching)
+[![dependency-status](https://gemnasium.com/cnnlabs/cnn-caching.svg)](https://gemnasium.com/cnnlabs/cnn-caching)
+
 
 ## Installation
 
 Via [npm](https://docs.npmjs.com/getting-started/installing-node):
 
 ```
-$ npm install caching
+$ npm install cnn-caching
 ```
 
 
@@ -24,7 +30,7 @@ $ npm install caching
 ### Pseudo-code Example
 
 ```javascript
-var Caching = require('caching');
+var Caching = require('cnn-caching');
 var cache = new Caching('redis'); /* use 'memory', 'redis' or 'hashring' */
 
 var ttl = 60 * 1000; // 1minute;
@@ -41,7 +47,7 @@ cache('twitter-users', ttl, function(passalong) {
 ### Memory Code Example
 
 ```javascript
-var Caching = require('caching');
+var Caching = require('cnn-caching');
 var cache = new Caching();
 
 setInterval(function() {
@@ -61,7 +67,7 @@ setInterval(function() {
 ### Redis Code Example
 
 ```javascript
-var Caching = require('caching');
+var Caching = require('cnn-caching');
 var cache = new Caching('redis');
 
 setInterval(function() {
@@ -81,7 +87,7 @@ setInterval(function() {
 ### Hash Ring Code Example
 
 ```javascript
-var Caching = require('caching');
+var Caching = require('cnn-caching');
 var cache = new Caching('hashring', {
         "servers": 'http://localhost:6377,http://localhost:6378,http://localhost:6379,http://localhost:6380',
         "max cache size": 10000 /* Any node-hashing options allowed */
