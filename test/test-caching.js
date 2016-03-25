@@ -1,13 +1,13 @@
 var Caching = require('../'),
     memoryCache = new Caching('memory'),
     assert = require('assert'),
-    utils = require('utils');
+    util = require('util');
 
 exports['MemoryStore'] = function (beforeExit) {
     var wroteCache = false,
         lastResults,
         callbacksCalled = 0,
-        key = utils.format('hello memory %s', Math.random()),
+        key = util.format('hello memory %s', Math.random()),
         ttl = 500; // 1s
 
     function store(next) {
@@ -48,7 +48,7 @@ exports['MemoryStore expiration'] = function (beforeExit) {
     var wroteCache = false,
         lastResults,
         callbacksCalled = 0,
-        key = utils.format('hello memory %s', Math.random()),
+        key = util.format('hello memory %s', Math.random()),
         ttl = 500; // .5s
 
     function store(next) {
@@ -91,7 +91,7 @@ exports['MemoryStore expiration'] = function (beforeExit) {
 exports['MemoryStore removal'] = function (beforeExit) {
     var wroteCache = false,
         callbacksCalled = 0,
-        key = utils.format('hello rem memory %s', Math.random()),
+        key = util.format('hello rem memory %s', Math.random()),
         ttl = 500; // .5s
 
     function store(next) {
@@ -131,7 +131,7 @@ exports['MemoryStore removal'] = function (beforeExit) {
 exports['MemoryStore removal pattern'] = function (beforeExit) {
     var wroteCache = false,
         callbacksCalled = 0,
-        key = utils.format('hello rem memory %s', Math.random()),
+        key = util.format('hello rem memory %s', Math.random()),
         ttl = 500; // .5s
 
     function store(next) {
@@ -172,7 +172,7 @@ exports['RedisStore'] = function (beforeExit) {
     var redisCache = new Caching('redis'),
         wroteCache = false,
         callbacksCalled = 0,
-        key = utils.format('hello redis %s', Math.random()),
+        key = util.format('hello redis %s', Math.random()),
         ttl = 500; // 1s
 
     function store(next) {
@@ -211,7 +211,7 @@ exports['RedisStore expiration'] = function (beforeExit) {
     var redisCache = new Caching('redis'),
         wroteCache = false,
         callbacksCalled = 0,
-        key = utils.format('hello redis %s', Math.random()),
+        key = util.format('hello redis %s', Math.random()),
         ttl = 1000, // 1s (the least possible on Redis since it only takes integer seconds)
         t;
 
@@ -254,7 +254,7 @@ exports['RedisStore removal'] = function (beforeExit) {
     var redisCache = new Caching('redis'),
         wroteCache = false,
         callbacksCalled = 0,
-        key = utils.format('hello rem redis %s', Math.random()),
+        key = util.format('hello rem redis %s', Math.random()),
         ttl = 500; // .5s
 
     function store(next) {
@@ -298,7 +298,7 @@ exports['RedisStore removal pattern'] = function (beforeExit) {
     var redisCache = new Caching('redis'),
         wroteCache = false,
         callbacksCalled = 0,
-        key = utils.format('hello rem redis %s', Math.random()),
+        key = util.format('hello rem redis %s', Math.random()),
         ttl = 500; // .5s
 
     function store(next) {
