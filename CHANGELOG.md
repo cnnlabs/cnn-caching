@@ -1,5 +1,21 @@
 # CNN Caching Changelog
 
+## 2016-04-18, Version 0.6.1, @adslaton
+
+### Notable changes
+
+- Update dependencies to the latest version
+
+
+### Known issues
+
+See https://github.com/cnnlabs/cnn-caching/labels/defect for complete and
+current list of known issues.
+
+### Commits
+
+* [[`ecbb3e8771`](https://github.com/cnnlabs/cnn-caching/commit/ecbb3e8771)] - Merge pull request #3 from cnnlabs/feature/dependency-update (A.D. Slaton) 
+* [[`5b8e47100c`](https://github.com/cnnlabs/cnn-caching/commit/5b8e47100c)] - Update dependencies to the latest version (A.D. Slaton)
 
 ## 2016-03-24, Version 0.6.0, @adslaton
 
