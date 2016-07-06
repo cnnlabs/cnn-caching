@@ -1,5 +1,22 @@
 # CNN Caching Changelog
 
+## 2016-07-06, Version 0.6.2, @adslaton
+
+### Notable changes
+
+- Check type for queues\[key\]
+
+### Known issues
+
+See https://github.com/cnnlabs/cnn-caching/labels/defect for complete and
+current list of known issues.
+
+### Commits
+
+* [[`37a7852883`](https://github.com/cnnlabs/cnn-caching/commit/37a7852883)] - Merge pull request #4 from cnnlabs/feature/bug-foreach-undefined (A.D. Slaton) 
+* [[`fb852b8407`](https://github.com/cnnlabs/cnn-caching/commit/fb852b8407)] - Check for queues\[key\] (A.D. Slaton)
+
+
 ## 2016-04-18, Version 0.6.1, @adslaton
 
 ### Notable changes
