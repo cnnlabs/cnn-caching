@@ -1,9 +1,11 @@
+'use strict';
+
 var Caching = require('../'),
     memoryCache = new Caching('memory'),
     assert = require('assert'),
     util = require('util');
 
-exports['MemoryStore'] = function (beforeExit) {
+exports.MemoryStore = function (beforeExit) {
     var wroteCache = false,
         lastResults,
         callbacksCalled = 0,
@@ -168,7 +170,7 @@ exports['MemoryStore removal pattern'] = function (beforeExit) {
 };
 
 
-exports['RedisStore'] = function (beforeExit) {
+exports.RedisStore = function (beforeExit) {
     var redisCache = new Caching('redis'),
         wroteCache = false,
         callbacksCalled = 0,
