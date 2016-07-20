@@ -1,7 +1,7 @@
 {
   "name": "cnn-caching",
   "description": "Easier caching in node.js. Now with consistent hashing.",
-  "version": "0.6.3",
+  "version": "0.6.4",
   "main": "./lib/caching",
   "directories": {
     "lib": "./lib"

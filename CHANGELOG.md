@@ -1,5 +1,21 @@
 # CNN Caching Changelog
 
+## 2016-07-20, Version 0.6.4, @adslaton
+
+### Notable changes
+
+- add jscsrc
+
+### Known issues
+
+See https://github.com/cnnlabs/cnn-caching/labels/defect for complete and
+current list of known issues.
+
+### Commits
+
+* [[`e414f7195c`](https://github.com/cnnlabs/cnn-caching/commit/e414f7195c)] - file touch (A.D. Slaton)
+* [[`f804f15fa2`](https://github.com/cnnlabs/cnn-caching/commit/f804f15fa2)] - add jscsrc (A.D. Slaton)
+
 ## 2016-07-19, Version 0.6.3, @adslaton
 
 ### Notable changes
