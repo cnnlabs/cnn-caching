@@ -200,7 +200,7 @@ exports.RedisStore = function (beforeExit) {
         assert.ifError(err);
         assert.equal(typeof results, 'number');
         assert.ok(!wroteCache);
-        redisCache.store.client.end();
+        redisCache.store.client.end(true);
     });
 
     beforeExit(function () {
@@ -242,7 +242,7 @@ exports['RedisStore expiration'] = function (beforeExit) {
             assert.ifError(err);
             assert.equal(typeof results, 'number');
             assert.ok(wroteCache);
-            redisCache.store.client.end();
+            redisCache.store.client.end(true);
         });
     }, ttl * 2);
 
@@ -285,7 +285,7 @@ exports['RedisStore removal'] = function (beforeExit) {
                 assert.ifError(err);
                 assert.equal(typeof results, 'number');
                 assert.ok(wroteCache);
-                redisCache.store.client.end();
+                redisCache.store.client.end(true);
             });
         }, 50);
     });
@@ -329,7 +329,7 @@ exports['RedisStore removal pattern'] = function (beforeExit) {
                 assert.ifError(err);
                 assert.equal(typeof results, 'number');
                 assert.ok(wroteCache);
-                redisCache.store.client.end();
+                redisCache.store.client.end(true);
             });
         }, 50);
     });
