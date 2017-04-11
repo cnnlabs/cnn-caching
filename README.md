@@ -91,7 +91,8 @@ setInterval(function() {
 var Caching = require('cnn-caching');
 var cache = new Caching('hashring', {
         "servers": 'http://localhost:6377,http://localhost:6378,http://localhost:6379,http://localhost:6380',
-        "max cache size": 10000 /* Any node-hashing options allowed */
+        "max cache size": 10000,  /* Any node-hashing options allowed */
+        "minTtl": 10  /* Minimum TTL that cnn-caching will actually cache (default 0) */
     });
 
 setInterval(function() {
