@@ -1,5 +1,25 @@
 # CNN Caching Changelog
 
+## 2017-04-14, Version 0.7.0, @drenter
+
+### Notable changes
+
+- Add minTtl option
+- Update dependencies
+
+### Known issues
+
+See https://github.com/cnnlabs/cnn-caching/labels/defect for complete and
+current list of known issues.
+
+### Commits
+
+* [[`7752864603`](https://github.com/cnnlabs/cnn-caching/commit/7752864603)] - Merge pull request #7 from cnnlabs/feature/add-min-ttl (DrEnter)
+* [[`42997a16a7`](https://github.com/cnnlabs/cnn-caching/commit/42997a16a7)] - Fix tests missing option to .end (James Drenter)
+* [[`97222bf225`](https://github.com/cnnlabs/cnn-caching/commit/97222bf225)] - Correct edge case. (James Drenter)
+* [[`fe12437073`](https://github.com/cnnlabs/cnn-caching/commit/fe12437073)] - Add support for minTtl option. (James Drenter)
+
+
 ## 2016-07-20, Version 0.6.4, @adslaton
 
 ### Notable changes
